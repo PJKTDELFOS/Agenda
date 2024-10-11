@@ -7,3 +7,52 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/PJKTDELFOS/Agenda.git
 git push -u origin main
+
+models
+1-criar o models,no models.,py do app
+2-fazer o makemigrations
+3-migrate
+4-registrar o models no admin para ele aparecer
+5-posso fazer n coisas  com metodos de classe no models que ja sao aplicados 
+6-quando for fazer  list_display lembrade manter a mesma grafia dos objetos
+sempre se lembrar da maldita virgula
+criar a classe do que precisa no models, e no django admin ,posso  usar os metodos, estudar a documentação, tem muito coisa boa, amanha ja posso começar a primeira fase do sistema wweb completo,  
+
+shell do django python manage.py shell
+jogar a classe numa variavel, e invocar os objetos de dentro dela lhes atribuindo valor pelo shell
+pra salvar variavel.save()
+
+contact.objects
+.get()
+Trabalhando com o model do Django
+
+# Importe o módulo
+from contact.models import Contact
+# Cria um contato (Lazy)
+# Retorna o contato
+contact = Contact(**fields)
+contact.save()
+# Cria um contato (Não lazy)
+# Retorna o contato
+contact = Contact.objects.create(**fields)
+# Seleciona um contato com id 10
+# Retorna o contato
+contact = Contact.objects.get(pk=10)
+# Edita um contato
+# Retorna o contato
+contact.field_name1 = 'Novo valor 1'
+contact.field_name2 = 'Novo valor 2'
+contact.save()
+# Apaga um contato
+# Depende da base de dados, geralmente retorna o número
+# de valores manipulados na base de dados
+contact.delete()
+# Seleciona todos os contatos ordenando por id DESC
+# Retorna QuerySet[]
+contacts = Contact.objects.all().order_by('-id')
+# Seleciona contatos usando filtros
+# Retorna QuerySet[]
+contacts = Contact.objects.filter(**filters).order_by('-id')
+
+
+configuração de url sempre primeiro a URL E DEPOIs a root
