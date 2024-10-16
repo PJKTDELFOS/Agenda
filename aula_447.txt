@@ -16,7 +16,8 @@ models
 5-posso fazer n coisas  com metodos de classe no models que ja sao aplicados 
 6-quando for fazer  list_display lembrade manter a mesma grafia dos objetos
 sempre se lembrar da maldita virgula
-criar a classe do que precisa no models, e no django admin ,posso  usar os metodos, estudar a documentação, tem muito coisa boa, amanha ja posso começar a primeira fase do sistema wweb completo,  
+criar a classe do que precisa no models, e no django admin ,posso  usar os metodos, estudar a documentação
+, tem muito coisa boa, amanha ja posso começar a primeira fase do sistema wweb completo,
 
 shell do django python manage.py shell
 jogar a classe numa variavel, e invocar os objetos de dentro dela lhes atribuindo valor pelo shell
@@ -56,3 +57,13 @@ contacts = Contact.objects.filter(**filters).order_by('-id')
 
 
 configuração de url sempre primeiro a URL E DEPOIs a root
+
+criar o arquivo  local_settings para manipular o settings
+
+try:
+    from agenda.local_settiings import *
+except ImportError:
+    ...
+
+
+colletctstatic, cria a pasta static
