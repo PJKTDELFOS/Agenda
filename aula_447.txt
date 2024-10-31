@@ -67,3 +67,27 @@ except ImportError:
 
 
 colletctstatic, cria a pasta static
+
+quando trabalhar com django html, lembrar que os espaços importam,
+na verdade importam e muito, um espaço fora do lugar pode
+por tudo a perder
+
+nao e tao interessante separar 
+
+como separar a header
+criar o partial ,que vai so um pedaço do html, se for so
+partial usar _nome.html
+mover o static para onde voce vai usar
+fazer o include dos pedaços, ou seja posso ir fazendo a  ou as paginas aos poucos, 
+no front end, conforme for fazendo o bakc end
+
+criar uma nova view para  search
+
+
+    if request.method == 'POST':
+        print()
+        print(request.method)
+        print(request.POST.get('first_name'))
+        #print(request.POST.get('last_name'))
+        print()
+
