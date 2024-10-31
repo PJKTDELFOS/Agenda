@@ -1,0 +1,3 @@
+1-criar a pagina html, extendendo, a base, que ja foi criada
+2-criar o arquivo de view, usando as importaçõe,s padrao, ja estao na pagina
+3-criar a url conforme o padrao apontado no arquivo de urls

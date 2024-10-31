@@ -1,0 +1,7 @@
+criação de forms
+
+1from django import forms
+2 fomulario herda de forms.-algum dos disponives, conforme
+a necessidade
+3-para algum que ja seja baseado no model, use o Modelforms
+4-

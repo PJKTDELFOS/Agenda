@@ -1,0 +1,35 @@
+<header class="header">
+    <h1 class="header-heading">
+        <a href="{% url "contact:login" %}" class="hearder-link">
+            <p>Agenda</p>
+        </a>
+    </h1>
+
+    <nav class="menu">
+        <ul class="menu-list">
+            <a href="{% url "contact:create" %}" class="menu-link">
+                create
+            </a>
+        <li class="menu-item">
+            <a href="{% url "contact:login" %}" class="menu-link">
+                login
+            </a>
+            <li class="menu-item">
+                <a href="{% url "contact:logout" %}" class="menu-link">
+                    logout
+                </a>
+        </li>
+        </ul>
+    </nav>
+    <div class="search">
+        <form action="{% url "contact:search" %}" method="get">
+            <input type="text" 
+            class="search-input"
+            placeholder="search" 
+            name="q"
+            ID="search"
+            value""{{request.GET.q.strip}}">
+        </form>
+    </div>
+</header>
+
