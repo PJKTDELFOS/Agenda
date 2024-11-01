@@ -5,6 +5,7 @@
     {% if user.is_authenticated %}
     <p>Voce esta logado como {{user.username}}</p>
     clique <a href="{% url "contact:logout" %}">Aqui</a> para Sair
+    <a href="{% url "contact:user_update" %}"></a>
     {% else %}
       {% include "contact/partials/_user_form.html" %}
     {% endif %}
